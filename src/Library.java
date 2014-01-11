@@ -5,7 +5,7 @@ public class Library {
 	private int capacityIncrement;
 	
 	public Library()	{
-		initialCapacity = ;
+		initialCapacity = 10;
 		capacityIncrement = 10;
 	}
 
