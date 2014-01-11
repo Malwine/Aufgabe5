@@ -5,8 +5,10 @@ public class LibraryTest {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		Book newBook = new Book("autor");
 
+		System.out.println(newBook.toString);
 	}
 
 }
