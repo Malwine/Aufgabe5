@@ -1,8 +1,11 @@
 
 public class Book {
 
-	private String title1;
-	
+	private String title;
+	private String author;
+	private String year;
+	private String genre;
+	private String isbn;
 	
 	/**
 	 * Contructs a Book
@@ -13,15 +16,18 @@ public class Book {
 	 * @param isbn
 	 * 
 	 */
-	public Book(String title) {
+	public Book(String title, String author, String year, String genre, String isbn) {
 		
-		 title1 = title;
+		this.title = title;
+		this.author = author;
+		this.year = year;
+		this.genre = genre;
+		this.isbn = isbn;
 		
 	}
 	
 	public String toString() {
-		return (title1);
-		
+		return (title + ", " + author + "\n" + year + "\n" + genre + "\n" + isbn);
 	}
 	
 }
