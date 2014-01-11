@@ -2,7 +2,6 @@
 public class Book {
 
 	private String title1;
-//	private String author1;
 	
 	
 	/**
@@ -14,12 +13,9 @@ public class Book {
 	 * @param isbn
 	 * 
 	 */
-	public Book(String title
-			//, String year, String genre, String isbn
-			) {
+	public Book(String title) {
 		
 		 title1 = title;
-//		 author1 = author;
 		
 	}
 	

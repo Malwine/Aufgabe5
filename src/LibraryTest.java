@@ -8,7 +8,7 @@ public class LibraryTest {
 		
 		Book newBook = new Book("autor");
 
-		System.out.println(newBook.toString);
+		System.out.println(newBook.toString());
 	}
 
 }
