@@ -26,6 +26,9 @@ public class Book {
 		
 	}
 	
+	/**
+	 * Returns a string for single book object output.
+	 */
 	public String toString() {
 		return (title + ", " + author + "\n" + year + "\n" + genre + "\n" + isbn);
 	}
