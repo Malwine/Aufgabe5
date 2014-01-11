@@ -3,15 +3,21 @@ public class Library {
 	
 	private int initialCapacity;
 	private int capacityIncrement;
+	String [] Bib;
 	
 	public Library()	{
 		initialCapacity = 10;
 		capacityIncrement = 10;
-		String [] Bib = new String [initialCapacity];
+		Bib = new String [initialCapacity];
+		for (int i = 0; i < Bib.length - 1; i++)	{
+			Bib [i] = "Yeah!";
+		}
 	}
 	
 	public void print()	{
-		System.out.println("x");
+		for (int i = 0; i < Bib.length - 1; i++)	{
+			System.out.println(Bib [i]);
+		}
 	}
 	
 }
