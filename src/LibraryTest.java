@@ -8,6 +8,8 @@ public class LibraryTest {
 		
 		Book newBook = new Book("titellll", "autoooor", "2009", "Sachbuch", "320918746");
 		
+		Library newBib = new Library();
+		
 		/**
 		Book newBook1 = new Book("titellll", "autoooor", "2009", "Sachbuch", "320918746");
 		Book newBook2 = new Book("titellll", "autoooor", "2009", "Sachbuch", "320918746");
@@ -23,6 +25,9 @@ public class LibraryTest {
 		*/
 		
 		System.out.println(newBook.toString());
+		
+		newBib.print();
+		
 	}
 
 }

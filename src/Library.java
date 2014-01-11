@@ -7,9 +7,11 @@ public class Library {
 	public Library()	{
 		initialCapacity = 10;
 		capacityIncrement = 10;
+		String [] Bib = new String [initialCapacity];
 	}
 	
-	public Bib())	{
-		String [] Bib = new String [] 
+	public void print()	{
+		System.out.println("x");
 	}
+	
 }
