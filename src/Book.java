@@ -17,13 +17,11 @@ public class Book {
 	 * 
 	 */
 	public Book(String title, String author, String year, String genre, String isbn) {
-		
 		this.title = title;
 		this.author = author;
 		this.year = year;
 		this.genre = genre;
 		this.isbn = isbn;
-		
 	}
 	
 	/**
