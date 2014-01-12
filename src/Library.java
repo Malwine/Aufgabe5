@@ -4,6 +4,12 @@ public class Library {
 	private int capacityIncrement;
 	private String [] Bib;
 
+	/**
+	 * Constructs a Library
+	 * @param initialCapacity 
+	 * @param capacityIncrement
+	 * 
+	 */
 	public Library()	{
 		/* correct? */
 		initialCapacity = 3;
