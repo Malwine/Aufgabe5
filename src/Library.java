@@ -1,14 +1,13 @@
-
 public class Library {
 
 	private int initialCapacity;
 	private int capacityIncrement;
 	private String [] Bib;
-	
+
 	public Library()	{
 		/* correct? */
-		initialCapacity = 10;
-		capacityIncrement = 10;
+		initialCapacity = 3;
+		capacityIncrement = 3;
 		Bib = new String [initialCapacity];
 	}
 
