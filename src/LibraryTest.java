@@ -27,7 +27,13 @@ public class LibraryTest {
 		newBib.insert(newBook7.toString());
 
 		newBib.print();
-
-		/* Test missing for method delete() and testing increment of bib */
+		 
+		
+		System.out.println("-----------------------");
+		
+		newBib.delete(1);  //newBook1 is deleted
+		newBib.print();
+		
+		/* Test missing for testing increment of bib */
 	}
 }
