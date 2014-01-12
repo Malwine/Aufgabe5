@@ -21,5 +21,7 @@ public class LibraryTest {
 		newBib.insert(newBook4.toString());
 
 		newBib.print();
+		
+		/* Test missing for method delete() and testing increment of bib */
 	}
 }
