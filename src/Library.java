@@ -11,11 +11,16 @@ public class Library {
 		Bib = new String [initialCapacity];
 	}
 	
-	//public void insert()	{
-		
-	//}
+	public void insert(String b)	{
+		for (int i = 0; i < Bib.length; i++)	{
+			if (Bib [i] == null)	{
+				Bib [i] = b;
+				break;
+			}
+		}
+	}
 	
-	public void delete(Book b)	{
+	public void delete(int b)	{
 		Bib [b] = "";
 		for (int i = b; i < Bib.length - 2; i++)	{
 			Bib [i] = Bib [i + 1];
@@ -23,6 +28,8 @@ public class Library {
 	}
 	
 	public void print()	{
-			System.out.println("x");
+		for (int i = 0; i < Bib.length; i++)	{
+			System.out.println(Bib [i]);
+		}
 	}
 }

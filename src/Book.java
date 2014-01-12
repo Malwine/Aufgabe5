@@ -16,6 +16,7 @@ public class Book {
 	 * @param isbn
 	 * 
 	 */
+	
 	public Book(String title, String author, String year, String genre, String isbn) {
 		this.title = title;
 		this.author = author;
@@ -29,6 +30,5 @@ public class Book {
 	 */
 	public String toString() {
 		return (title + ", " + author + "\n" + year + "\n" + genre + "\n" + isbn);
-	}
-	
+	}	
 }

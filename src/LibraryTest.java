@@ -6,28 +6,20 @@ public class LibraryTest {
 	 */
 	public static void main(String[] args) {
 		
-		Book newBook = new Book("titellll", "autoooor", "2009", "Sachbuch", "320918746");
-		
 		Library newBib = new Library();
 		
-		/**
-		Book newBook1 = new Book("titellll", "autoooor", "2009", "Sachbuch", "320918746");
-		Book newBook2 = new Book("titellll", "autoooor", "2009", "Sachbuch", "320918746");
-		Book newBook3 = new Book("titellll", "autoooor", "2009", "Sachbuch", "320918746");
-		Book newBook4 = new Book("titellll", "autoooor", "2009", "Sachbuch", "320918746");
-		
-		Library newBib = new Library();
-		
-		newBib.insert(Book newBook);
-		newBib.insert(Book newBook1);
+		Book newBook = new Book("1tite", "1au", "12009", "1uch", "1326");
+		Book newBook1 = new Book("22222", "2oor", "222009", "22Sach", "2246");
+		Book newBook2 = new Book("3tlll", "33aor", "3309", "333Sach", "318746");
+		Book newBook3 = new Book("444tl", "444autor", "4449", "444bh", "448746");
+		Book newBook4 = new Book("555tll", "555autor", "559", "55uch", "55746");
 
-		System.out.println(newBib.print());
-		*/
-		
-		System.out.println(newBook.toString());
-		
+		newBib.insert(newBook.toString());
+		/*newBib.insert(newBook1.Book());
+		newBib.insert(newBook2.Book());
+		newBib.insert(newBook3.Book());
+		newBib.insert(newBook4.Book());*/
+
 		newBib.print();
-		
 	}
-
 }
