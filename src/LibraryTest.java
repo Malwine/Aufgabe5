@@ -15,10 +15,10 @@ public class LibraryTest {
 		Book newBook4 = new Book("555tll", "555autor", "559", "55uch", "55746");
 
 		newBib.insert(newBook.toString());
-		/*newBib.insert(newBook1.Book());
-		newBib.insert(newBook2.Book());
-		newBib.insert(newBook3.Book());
-		newBib.insert(newBook4.Book());*/
+		newBib.insert(newBook1.toString());
+		newBib.insert(newBook2.toString());
+		newBib.insert(newBook3.toString());
+		newBib.insert(newBook4.toString());
 
 		newBib.print();
 	}

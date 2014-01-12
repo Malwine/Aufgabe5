@@ -29,6 +29,7 @@ public class Library {
 	
 	public void print()	{
 		for (int i = 0; i < Bib.length; i++)	{
+			if (Bib [i] == null)	break;
 			System.out.println(Bib [i]);
 		}
 	}
