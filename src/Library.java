@@ -1,3 +1,7 @@
+/**
+ * @author Jan Dangel, Malwine Gier
+ */
+
 public class Library {
 
 	private int initialCapacity;
@@ -16,6 +20,10 @@ public class Library {
 		Bib = new String [initialCapacity];
 	}
 
+	/**
+	 * Inserts a book object in the library and increments the capacity of the array.
+	 */
+	
 	public void insert(String b)	{
 		/* Bib bigger if bib full and a insert.newBook */
 		if (Bib [Bib.length - 1] != null)	{
@@ -39,6 +47,10 @@ public class Library {
 		}
 	}
 
+	/**
+	 * Deletes a book object in the library and decrements the capacity of the array.
+	 */
+	
 	public void delete(int b)	{
 		/* Bib gets smaller if
 		 * deleting a book and:
@@ -65,6 +77,15 @@ public class Library {
 			Bib [i] = null;
 		}	
 	}
+	
+	public void printLength()	{
+		
+		System.out.print(Bib.length);
+	}
+	
+	/**
+	 * Output of all books in the array.
+	 */
 
 	public void print()	{
 		for (int i = 0; i < Bib.length; i++)	{

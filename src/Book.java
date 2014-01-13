@@ -1,3 +1,7 @@
+/**
+ * @author Jan Dangel, Malwine Gier
+ */
+
 public class Book {
 
 	private String title;
@@ -7,7 +11,7 @@ public class Book {
 	private String isbn;
 
 	/**
-	 * Constructs a Book
+	 * Constructs a Book.
 	 * @param title
 	 * @param author
 	 * @param year

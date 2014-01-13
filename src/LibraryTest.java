@@ -1,23 +1,29 @@
+/**
+ * @author Jan Dangel, Malwine Gier
+ */
+
 public class LibraryTest {
 
 	/**
 	 * @param args
 	 */
 	
-	public static void main(String[] args) {
+	public static void main(String[] argv) {
 
 		Library newBib = new Library();
 
-		Book newBook = new Book("1tite", "1au", "12009", "1uch", "1326");
-		Book newBook1 = new Book("22222", "2oor", "222009", "22Sach", "2246");
-		Book newBook2 = new Book("3tlll", "33aor", "3309", "333Sach", "318746");
-		Book newBook3 = new Book("444tl", "444autor", "4449", "444bh", "448746");
-		Book newBook4 = new Book("555tll", "555autor", "559", "55uch", "55746");
-		Book newBook5 = new Book("666tll", "666autor", "669", "66uch", "66746");
-		Book newBook6 = new Book("777tll", "777autor", "779", "77uch", "77746");
-		Book newBook7 = new Book("888tll", "888autor", "889", "88uch", "88746");
+		Book newBook0 = new Book("Java ist auch eine Insel", "Christian Ullenbook", "2009", "Sachbuch", "978-3836213714");
+		Book newBook1 = new Book("title2", "author2", "1990", "genre2", "978-222344246");
+		Book newBook2 = new Book("title3", "author3", "1991", "genre3", "978-318742426");
+		Book newBook3 = new Book("title4", "author4", "1992", "genre4", "978-448742426");
+		Book newBook4 = new Book("title5", "author5", "1993", "genre5", "978-557457756");
+		Book newBook5 = new Book("title6", "author6", "1994", "genre6", "978-667457576");
+		Book newBook6 = new Book("title7", "author7", "1995", "genre7", "978-777457576");
+		Book newBook7 = new Book("title8", "author8", "1996", "genre8", "978-887445456");
+		Book newBook8 = new Book("title9", "author9", "1997", "genre9", "978-887434556");
+		Book newBook9 = new Book("title10", "author10", "1998", "genre10", "978-88744546");
 
-		newBib.insert(newBook.toString());
+		newBib.insert(newBook0.toString());
 		newBib.insert(newBook1.toString());
 		newBib.insert(newBook2.toString());
 		newBib.insert(newBook3.toString());
@@ -25,14 +31,23 @@ public class LibraryTest {
 		newBib.insert(newBook5.toString());
 		newBib.insert(newBook6.toString());
 		newBib.insert(newBook7.toString());
+		newBib.insert(newBook8.toString());
+		newBib.insert(newBook9.toString());
 
+		newBib.delete(1);
+		newBib.delete(2);
 		newBib.delete(3);
-		newBib.delete(5);
-		newBib.delete(9);
+		newBib.delete(4);
+		//newBib.delete(5);
+		//newBib.delete(6);
+		//newBib.delete(7);
+		//newBib.delete(8);
+		//newBib.delete(9);
 
 		newBib.print();
 
-		/* Test missing for method delete(), array gets shorter test!
-		 * and testing increment of bib */
+		newBib.printLength(); // prints the length of the current array
+
+
 	}
 }
