@@ -31,14 +31,8 @@ public class LibraryTest {
 		//newBib.delete(6);
 
 		newBib.print();
-		 
-		
-		System.out.println("-----------------------");
-		
-		newBib.delete(1);  //newBook1 is deleted
-		newBib.print();
-		
-		/* Test missing for testing increment of bib */
 
+		/* Test missing for method delete(), array gets shorter test!
+		 * and testing increment of bib */
 	}
 }
