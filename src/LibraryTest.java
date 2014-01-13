@@ -31,11 +31,6 @@ public class LibraryTest {
 		//newBib.delete(6);
 
 		newBib.print();
-<<<<<<< HEAD
-
-		/* Test missing for method delete(), array gets shorter test!
-		 * and testing increment of bib */
-=======
 		 
 		
 		System.out.println("-----------------------");
@@ -44,6 +39,6 @@ public class LibraryTest {
 		newBib.print();
 		
 		/* Test missing for testing increment of bib */
->>>>>>> dd236065ecc7d56dbd12eaa3d09859a0a595a671
+
 	}
 }
