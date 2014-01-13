@@ -11,7 +11,6 @@ public class Library {
 	 * 
 	 */
 	public Library()	{
-		/* correct? */
 		initialCapacity = 3;
 		capacityIncrement = 3;
 		Bib = new String [initialCapacity];
@@ -44,17 +43,19 @@ public class Library {
 		/* Bib gets smaller if
 		 * deleting a book and:
 		 * |books| = BibCapacity - capacityIncrement */
-		if (b > Bib.length - 1)	;	//skip the rest!
-		if (Bib [b] == null)	;	//skip the rest!
-		if (Bib [Bib.length - capacityIncrement] != null && Bib [Bib.length - capacityIncrement + 1] == null)	{
-			String [] newBib = new String [Bib.length - capacityIncrement];
-			for (int i = 0; i < b; i++)	{
-				newBib [i] = Bib [i];
-			}
-			for (int i = b; i < newBib.length; i++)	{
-				newBib [i] = Bib [i+1];
-			}
-			Bib = newBib;	//check for this part is missing
+		if (b > Bib.length - 1)	{
+			;
+		}	else if (Bib [b] == null)	{
+			;
+		}	else if (Bib [Bib.length - capacityIncrement] != null && Bib [Bib.length - capacityIncrement + 1] == null)	{
+				String [] newBib = new String [Bib.length - capacityIncrement];
+				for (int i = 0; i < b; i++)	{
+					newBib [i] = Bib [i];
+				}
+				for (int i = b; i < newBib.length; i++)	{
+					newBib [i] = Bib [i+1];
+				}
+				Bib = newBib;
 		}	else	{
 			Bib [b] = "";
 			int i;

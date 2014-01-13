@@ -28,7 +28,7 @@ public class LibraryTest {
 
 		newBib.delete(3);
 		newBib.delete(5);
-		//newBib.delete(6);
+		newBib.delete(9);
 
 		newBib.print();
 
