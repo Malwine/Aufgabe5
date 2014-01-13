@@ -7,7 +7,7 @@ public class Book {
 	private String isbn;
 
 	/**
-	 * Contructs a Book
+	 * Constructs a Book
 	 * @param title
 	 * @param author
 	 * @param year
