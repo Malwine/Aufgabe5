@@ -52,6 +52,7 @@ public class Library {
 	 */
 	
 	public void delete(int b)	{
+		b = b - 1;
 		/* Bib gets smaller if
 		 * deleting a book and:
 		 * |books| = BibCapacity - capacityIncrement */
@@ -59,7 +60,7 @@ public class Library {
 			;
 		}	else if (Bib [b] == null)	{
 			;
-		}	else if (Bib [Bib.length - capacityIncrement] != null && Bib [Bib.length - capacityIncrement + 1] == null)	{
+		}	else if (Bib [Bib.length - capacityIncrement + 1] != null && Bib [Bib.length - capacityIncrement + 2] == null)	{
 				String [] newBib = new String [Bib.length - capacityIncrement];
 				for (int i = 0; i < b; i++)	{
 					newBib [i] = Bib [i];
