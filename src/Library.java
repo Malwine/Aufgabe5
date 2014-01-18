@@ -15,8 +15,8 @@ public class Library {
 	 * 
 	 */
 	public Library()	{
-		initialCapacity = 100;
-		capacityIncrement = 100;
+		initialCapacity = 10;
+		capacityIncrement = 10;
 		Bib = new String [initialCapacity];
 	}
 
