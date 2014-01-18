@@ -52,15 +52,17 @@ public class Library {
 	 */
 	
 	public void delete(String b)	{
-		if (Bib [Bib.length - 1] == b)	{
+		if (b.equals(Bib[Bib.length - 1]))	{
 			Bib [Bib.length - 1] = null;
 		}	else	{
-			for (int i = 0; i < Bib.length - 1; i++)		{
-				if (b == Bib [i])	{
+			for (int i = 0; i < Bib.length - 1; i++)	{
+				if (b.equals(Bib [i]))	{
+					int x = 0;
 					for (int j = i; j < Bib.length - 2; j++)	{
 						Bib [j] = Bib [j + 1];
+						x = j;
 					}
-					Bib [Bib.length] = null;
+					Bib [x + 1] = null;
 					break;
 				}
 			}

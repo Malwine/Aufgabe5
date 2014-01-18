@@ -31,11 +31,11 @@ public class LibraryTest {
 		newBib.insert(newBook5.toString());
 		newBib.insert(newBook6.toString());
 		newBib.insert(newBook7.toString());
-		newBib.insert(newBook8.toString());
-		newBib.insert(newBook9.toString());
+		//newBib.insert(newBook8.toString());
+		//newBib.insert(newBook9.toString());
 
 		newBib.delete(newBook0.toString());
-		newBib.delete(newBook9.toString());
+		newBib.delete(newBook7.toString());
 	/*	newBib.delete();
 		newBib.delete();
 		newBib.delete();
