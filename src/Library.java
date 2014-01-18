@@ -51,32 +51,21 @@ public class Library {
 	 * Deletes a book object in the library and decrements the capacity of the array.
 	 */
 	
-	public void delete(int b)	{
-		b = b - 1;
-		/* Bib gets smaller if
-		 * deleting a book and:
-		 * |books| = BibCapacity - capacityIncrement */
-		if (b > Bib.length - 1)	{
-			;
-		}	else if (Bib [b] == null)	{
-			;
-		}	else if (Bib [Bib.length - capacityIncrement + 1] != null && Bib [Bib.length - capacityIncrement + 2] == null)	{
-				String [] newBib = new String [Bib.length - capacityIncrement];
-				for (int i = 0; i < b; i++)	{
-					newBib [i] = Bib [i];
-				}
-				for (int i = b; i < newBib.length; i++)	{
-					newBib [i] = Bib [i+1];
-				}
-				Bib = newBib;
+	public void delete(String b)	{
+		if (Bib [Bib.length - 1] == b)	{
+			Bib [Bib.length - 1] = null;
 		}	else	{
-			Bib [b] = "";
-			int i;
-			for (i = b; i < Bib.length - 2 && Bib [i + 1] != null; i++)	{
-				Bib [i] = Bib [i + 1];
+			for (int i = 0; i < Bib.length - 1; i++)		{
+				if (b == Bib [i])	{
+					for (int j = i; j < Bib.length - 2; j++)	{
+						Bib [j] = Bib [j + 1];
+					}
+					Bib [Bib.length] = null;
+					break;
+				}
 			}
-			Bib [i] = null;
-		}	
+		}
+		//Bib [i] = null;
 	}
 	
 	public void printLength()	{

@@ -34,15 +34,15 @@ public class LibraryTest {
 		newBib.insert(newBook8.toString());
 		newBib.insert(newBook9.toString());
 
-		newBib.delete(1);
-		newBib.delete(1);
-	/*	newBib.delete(3);
-		newBib.delete(4);
-		newBib.delete(5);
-		newBib.delete(6);
-		newBib.delete(7);
-		newBib.delete(0);
-		newBib.delete(1);*/
+		newBib.delete(newBook0.toString());
+		newBib.delete(newBook9.toString());
+	/*	newBib.delete();
+		newBib.delete();
+		newBib.delete();
+		newBib.delete();
+		newBib.delete();
+		newBib.delete();
+		newBib.delete();*/
 
 		newBib.print();
 
