@@ -15,8 +15,8 @@ public class Library {
 	 * 
 	 */
 	public Library()	{
-		initialCapacity = 3;
-		capacityIncrement = 3;
+		initialCapacity = 100;
+		capacityIncrement = 100;
 		Bib = new String [initialCapacity];
 	}
 
@@ -67,7 +67,6 @@ public class Library {
 				}
 			}
 		}
-		//Bib [i] = null;
 	}
 	
 	public void printLength()	{
