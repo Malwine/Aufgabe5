@@ -9,7 +9,7 @@ public class Library {
 	private String [] Bib;
 
 	/**
-	 * Constructs a Library
+	 * Constructs a Library.
 	 * @param initialCapacity 
 	 * @param capacityIncrement
 	 * 
@@ -67,11 +67,6 @@ public class Library {
 				}
 			}
 		}
-	}
-	
-	public void printLength()	{
-		
-		System.out.print(Bib.length);
 	}
 	
 	/**
